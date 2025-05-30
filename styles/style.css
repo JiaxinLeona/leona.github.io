@@ -1,11 +1,14 @@
-/* 马卡龙色调变量 */
+/* ======================
+   马卡龙绿色系配色方案
+   ====================== */
 :root {
-    --bg: #fff9fb;       /* 浅粉背景 */
+    --bg: #f0f7f4;       /* 极浅薄荷绿背景 */
     --card: #ffffff;     /* 纯白卡片 */
-    --primary: #d8b4fe;  /* 浅紫色 */
-    --secondary: #e2ccdb; /* 粉红色 */
-    --accent: #c7a8ff;   /* 淡紫色 */
-    --text: #776f9f;     /* 深紫文本 */
+    --primary: #a8d8b9;  /* 主色：柔和的薄荷绿 */
+    --secondary: #c7e8d2; /* 辅色：更浅的薄荷绿 */
+    --accent: #8ac4a5;   /* 强调色：稍深的生态绿 */
+    --text: #4a6b58;     /* 深灰绿文本 */
+    --highlight: #e8f4ea; /* 高亮色 */
 }
 
 @media print {
@@ -36,13 +39,13 @@ body {
     border-radius: 16px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0 4px 20px rgba(216, 180, 254, 0.15);
+    box-shadow: 0 4px 20px var(--primary);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 25px rgba(216, 180, 254, 0.25);
+    box-shadow: 0 6px 25px var(--primary);
 }
 
 /* 头部样式 */
@@ -100,7 +103,7 @@ body {
     border-radius: 16px;
     padding: 1rem;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 15px rgba(216, 180, 254, 0.1);
+    box-shadow: 0 4px 15px var(--primary);
 }
 
 .contact-card p {
@@ -175,7 +178,7 @@ li {
     border-radius: 12px;
     transition: all 0.3s;
     background: white;
-    border: 1px solid #f0e5ff;
+    border: 1px solid var(--primary);
 }
 
 .timeline-header {
@@ -186,7 +189,7 @@ li {
 }
 
 .timeline-header:hover {
-    background: #faf5ff;
+    background: var(--primary);
 }
 
 .toggle-icon {
@@ -211,7 +214,7 @@ li {
 .timeline-item.active .timeline-details {
     max-height: 500px; /* 根据内容调整 */
     padding: 1rem;
-    border-top: 1px dashed #e0c4ff;
+    border-top: 1px dashed var(--primary);
 }
 
 .timeline-item.active .toggle-icon {
@@ -294,12 +297,12 @@ li {
 @media (max-width: 768px) {
     .contact-card {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.8rem;
         align-items: center;
     }
     
     .resume-header {
-        margin-bottom: 1.5rem;
+        margin-bottom: 3.5rem;
     }
     
     .name {
@@ -322,14 +325,14 @@ li {
     padding: 1.5rem;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 3px 12px rgba(96, 73, 122, 0.1);
+    box-shadow: 0 3px 12px rgba(68, 117, 85, 0.1);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
     border: 1px solid #f0e5ff;
 }
 
 .certificate-item:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 25px rgba(22, 13, 31, 0.2);
+    box-shadow: 0 8px 25px var(--primary);
 }
 
 .certificate-ribbon {
@@ -405,18 +408,18 @@ li {
 }
 
 .skill-tag {
-    background: linear-gradient(135deg, #f8d5ff, #e0c4ff);
-    color: #5d4790;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--text);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
-    border: 1px solid #e0c4ff;
-    box-shadow: 0 2px 5px rgba(26, 16, 36, 0.2);
+    border: 1px solid var(--primary);
+    box-shadow: 0 2px 5px rgba(65, 70, 67, 0.2);
     transition: all 0.3s ease;
 }
 
 .skill-tag:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(165, 144, 188, 0.3);
-    background: linear-gradient(135deg, #e0c4ff, #d8b4fe);
+    box-shadow: 0 4px 8px rgba(128, 169, 126, 0.3);
+    background: linear-gradient(135deg, #588861, #4b976b);
 }
