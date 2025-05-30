@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Resume</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="resume-container">
+        <!-- 头部区域 -->
+        <header class="resume-header">
+            <div class="avatar-wrapper">
+                <img src="images/avatar.jpg" alt="face" class="avatar">
+            </div>
+            <div class="title-wrapper">
+                <h1 class="name">Jiaxin Li (Leona)</h1>
+                <p class="title">a registered Remedial Massage Therapist and studying CIII of disability</p>
+            </div>
+            <div class="certificate-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="design">Design</button>
+    <button class="filter-btn" data-filter="coding">Coding</button>
+</div>
+        </header>
+
+        <!-- 联系信息 -->
+        <section class="contact-section">
+            <div class="contact-card">
+                <p>📧 leonaleonalee@gmail.com</p>
+                <p>📞 0402114884</p>
+                <p>📍 NewTown 7008</p>
+            </div>
+        </section>
+
+        <!-- 主要内容 -->
+        <main class="resume-main">
+            <!-- 个人简介 -->
+            <section class="card summary">
+                <h2><span class="icon">✨</span> Personal Summary</h2>
+                <p>Creative frontend developer with a passion for building beautiful, user-friendly interfaces. Love pastel colors and minimalist design.</p>
+            </section>
+
+            <!-- 工作经验 -->
+            <section class="card experience">
+                <h2><span class="icon">💼</span> Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Remedial Masaage Therapist</h3>
+                        <p class="meta">Serene Massage | 2023-Present</p>
+                        <ul>
+                            <li>Designed award-winning dashboard interface</li>
+                            <li>Improved user engagement by 30%</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 教育背景 -->
+            <section class="card education">
+                <h2><span class="icon">🎓</span> Education</h2>
+                <div class="education-item">
+                    <h3>B.Sc in Computer Science</h3>
+                    <p class="meta">Stanford University | 2016-2020</p>
+                </div>
+            </section>
+
+            <!-- 技能 -->
+            <section class="card skills">
+                <h2><span class="icon">🛠️</span> Skills</h2>
+                <div class="skill-bars">
+                    <div class="skill" data-level="90%">
+                        <span>UI Design</span>
+                    </div>
+                    <div class="skill" data-level="85%">
+                        <span>HTML/CSS</span>
+                    </div>
+                    <div class="skill" data-level="80%">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+<!-- 证书 -->
+<section class="card certificates">
+    <h2><span class="icon">🏆</span> Certificates</h2>
+    <div class="certificate-grid">
+        <!-- 证书 1 -->
+        <div class="certificate-item">
+            <div class="certificate-ribbon">2023</div>
+            <h3>Advanced UI Design</h3>
+            <p class="issuer">Design Master Institute</p>
+            <p class="description">Learned advanced prototyping and micro-interactions</p>
+        </div>
+        
+        <!-- 证书 2 -->
+        <div class="certificate-item">
+            <div class="certificate-ribbon">2022</div>
+            <h3>Frontend Development</h3>
+            <p class="issuer">Code Academy</p>
+            <p class="description">Mastered React and Vue.js frameworks</p>
+        </div>
+    </div>
+</section>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
